@@ -30,6 +30,6 @@
   .btns--container{
     display: flex;
     flex-direction: row;
-    column-gap:5%;
-    
+    column-gap:2%;
+    border: 0px solid;
   }
