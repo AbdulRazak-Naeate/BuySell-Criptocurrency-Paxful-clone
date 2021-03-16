@@ -1,0 +1,17 @@
+:root{
+    --backgroundOne:#f9f7fb;
+}
+.flex-container{
+    background-color: #f9f7fb;
+    display: flex;
+    border: 1px solid;
+}
+.flex-container > div{
+    background-color: #f9f7fb; 
+}
+
+.left-side ,.right-side{
+    width :50%;
+    text-align: left;
+    padding: 30px;
+}

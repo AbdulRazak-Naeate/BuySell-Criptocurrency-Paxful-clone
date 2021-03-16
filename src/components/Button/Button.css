@@ -1,0 +1,115 @@
+:root {
+    --primary:#939393;
+    --primary-blue:#54a6f0;
+    --primary-white:#fff;
+  }
+  
+  .btns {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn--primary {
+    background-color: var(--primary);
+    color: #242424;
+    border: 1px solid var(--primary);
+  }
+  
+  .btn--outline {
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+  }
+  .btn--select-token-outline {
+  
+    background-color: transparent;
+    color: #787878;
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    border-radius:3px ;
+    transition: all 0.3s ease-out;
+    height: 50px;
+    font-size: 1.0rem;
+    font-weight:600;
+  }
+
+
+  .btn--primary--blue {
+    background-color:var(--primary-blue);
+    color: #fff;
+    padding: 1px 1px;
+    border: 1px solid var(--primary);
+    border-radius: 2px;
+    margin-top: 8px;
+    height: 35px;
+  }
+  .btn-default-icon{
+    color: #fff !important;
+    border: 1px solid ;
+    padding-left: 5px;
+    margin-bottom: 5px !important;
+    height: 20px;
+    
+  }
+  
+  .btn--medium {
+    padding: 8px 20px;
+    font-size: 18px;
+  }
+  
+  .btn--large {
+    padding: 12px 26px;
+    font-size: 20px;
+  }
+
+  .btn--small {
+    padding: 12px 26px;
+    font-size: 14px;
+    
+  }
+  .btn--default {
+    padding: 8px 20px;
+    font-size: 18px;
+  }
+  .btn--buy-container{
+    background-color: var(--primary-blue);
+    border: 1px solid;
+    padding: 0px;
+  }
+  .btn-buy{
+    background-color: var(--primary-blue);
+    border: 0px;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  .btn-buy-chevron-icon{
+    color: #fff;
+    border: 1px solid;
+    height: 28px;
+    margin-top: -10;
+    width: 28%;
+    margin-right: -24px;
+  }
+
+  .btn--large:hover,
+  .btn--medium:hover {
+    transition: all 0.3s ease-out;
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+  .btn--select-token-outline:hover {
+    transition: all 0.3s ease-out;
+    background: #fff;
+    border:1px solid var(--primary-blue);
+    transition: 250ms;
+  }
+  .btn--icon{
+    height: 20px;
+    margin-right: 8px;
+  }
