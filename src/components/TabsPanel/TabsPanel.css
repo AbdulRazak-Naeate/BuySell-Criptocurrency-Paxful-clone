@@ -32,4 +32,18 @@
     flex-direction: row;
     column-gap:2%;
     border: 0px solid;
+    margin-bottom: 15px;
+  }
+  
+  .form--input--wrapper{
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 10px;
+    
+  }
+
+  .from--input--wrapper,input{
+  padding: 8px;
+  width: 60%;
+
   }

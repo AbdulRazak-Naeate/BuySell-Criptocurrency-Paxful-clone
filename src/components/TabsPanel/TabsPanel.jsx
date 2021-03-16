@@ -42,6 +42,20 @@ const TabsPanel = () => {
                   Picoin
                 </Button>
               </div>
+              <p className="token--current-market-price"><i class="fal fa-info-circle"></i> 1 BTC = $57,883.72</p>
+
+              <form action="" className="payment-buy-amount-form">
+              <label htmlFor="payment--method">Payment Method  </label><br/>
+                <div className="form--input--wrapper">
+                <input type="text" className="input-payment--method" placeholder="All Payment Methods"/>
+                </div>
+
+                <label htmlFor="payment--amount">You Pay  </label><br/>
+                <div className="form--input--wrapper">
+                <input type="text" className="input-payment--amount" placeholder="Any Amount"/>
+                <Button className="btns" buttonSize="btn medim" buttonStyle="btn--primary">any Currency</Button>
+                </div>
+              </form>
             </div>
           </TabPanel>
           <TabPanel tabId="two">
