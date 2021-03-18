@@ -22,17 +22,17 @@ const TabsPanel = () => {
               <p>Cryptocurrency</p>
               <div className="btns--container" >
               
-                <Button className="btns" buttonSize="btn--small" buttonStyle="btn--select-token-outline"
+                <Button className="btn" buttonSize="btn--small" buttonStyle="btn--select-token-outline"
                 icon={btcIcon}
                 >
                  Bitcoin
                 </Button>
 
-                <Button className="btns" buttonSize="btn--small" buttonStyle="btn--select-token-outline"
+                <Button className="btn" buttonSize="btn--small" buttonStyle="btn--select-token-outline"
                 icon={tetherIcon}>
                  Tether
                 </Button>
-                <Button className="btns"
+                <Button className="btn"
                 buttonSize="btn--small"
                 buttonStyle="btn--select-token-outline"
                 icon={ethereumIcon}>Ethereum</Button>
@@ -48,12 +48,13 @@ const TabsPanel = () => {
               <label htmlFor="payment--method">Payment Method  </label><br/>
                 <div className="form--input--wrapper">
                 <input type="text" className="input-payment--method" placeholder="All Payment Methods"/>
+                <Button  buttonSize="btn medium" buttonStyle="input--btn">Show all</Button>
                 </div>
 
-                <label htmlFor="payment--amount">You Pay  </label><br/>
+                <label htmlFor="payment--amount">You Pay </label><br/>
                 <div className="form--input--wrapper">
                 <input type="text" className="input-payment--amount" placeholder="Any Amount"/>
-                <Button className="btns" buttonSize="btn medim" buttonStyle="btn--primary">any Currency</Button>
+                <Button  buttonSize="btn medium" buttonStyle="input--btn">Any Currency &nbsp; <i className="fas fa-chevron-down input-btn-icon"></i></Button>
                 </div>
               </form>
             </div>

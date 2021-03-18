@@ -18,6 +18,7 @@
     align-items: center;
     height: 60px;
     max-width: 1500px;
+    border: 1px;
 
   }
   
@@ -42,7 +43,7 @@
 .balance{
   font-size: 1rem;
   font-weight: 600;
-  color: blue;
+  color: #54a6f0;
   text-align: end;
   margin: 0;
 }
@@ -67,13 +68,15 @@
   
   .nav-menu {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 8px;
     list-style: none;
     text-align: center;
     width: 60vw;
+    height: 40px;
     justify-content: start;
     margin-right: 2rem;
+    margin-top:10px;
     border: 0px solid;
   }
   
@@ -82,18 +85,21 @@
   }
   
   .nav-links {
-    color: #939393;
+    color: #373737;
     font-size: 1.0rem;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 60%;
+    font-weight: 600;
   }
   
   .nav-links:hover {
-    border-bottom: 4px solid #939393;
+    border-bottom: 0px solid #939393;
     transition: all 0.2s ease-out;
+    color: #54a6f0;
+    text-decoration: none;
   }
   
   .fa-bars , .fas{
@@ -161,6 +167,7 @@
       top: 0;
       left: 0;
       transform: translate(25%, 50%);
+      border: 1px solid !important;
     }
   
     .menu-icon {

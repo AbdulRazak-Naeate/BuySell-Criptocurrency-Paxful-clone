@@ -4,7 +4,7 @@
     --primary-white:#fff;
   }
   
-  .btns {
+  .btn {
     padding: 8px 20px;
     border-radius: 2px;
     outline: none;
@@ -33,7 +33,6 @@
     border: 1px solid var(--primary);
     border-radius:3px ;
     transition: all 0.3s ease-out;
-    height: 50px;
     font-size: 1.0rem;
     font-weight:600;
   }
@@ -47,6 +46,17 @@
     border-radius: 2px;
     margin-top: 8px;
     height: 35px;
+  }
+  .input--btn {
+   text-align: right !important;
+    background-color: transparent;
+    color: #33333f;
+    padding: 8px 20px;
+    border: 1px solid var(--primary-blue);
+    border-radius:3px ;
+    transition: all 0.3s ease-out;
+    font-size: 0.9rem !important;
+    font-weight:600;
   }
   .btn-default-icon{
     color: #fff !important;
@@ -111,5 +121,7 @@
   }
   .btn--icon{
     height: 20px;
-    margin-right: 8px;
+    position: absolute;
+    margin-left: -22px;
+    margin-bottom:30px;
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Button.css';
 import {Link}from 'react-router-dom';
-const STYLES=['btn--primary','btn--outline','btn--primary--blue','btn--select-token-outline'];
+const STYLES=['btn--primary','btn--outline','btn--primary--blue','btn--select-token-outline','input--btn'];
 const SIZES=['btn--medium','btn--small','btn-large','btn--default'];
 export const Button=({
     children,
@@ -21,7 +21,7 @@ export const Button=({
     return (
         <Link to={`${link}`} className='btn-mobile'>
             <button 
-            className={`${checkButtonStyle} ${checkButtonSize}`} onClick={onClick}
+            className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick}
             type={type}
             >
             <img src={icon} alt="" onerror={onerrorimgload} className="btn--icon"/>{children}

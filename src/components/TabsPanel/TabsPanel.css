@@ -36,14 +36,22 @@
   }
   
   .form--input--wrapper{
-    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+    border: 1px solid #d8d8d8;
     border-radius: 3px;
-    padding: 10px;
+    padding: 12px;
     
   }
 
   .from--input--wrapper,input{
   padding: 8px;
   width: 60%;
+  background-color: #fff;
+  border: 0px solid;
 
+  }
+  .input-btn-icon{
+    color: var(--primary-blue);
   }
