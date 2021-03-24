@@ -7,7 +7,7 @@ function App() {
     <div className="App">
     <Router>
     <Navbar/>
-    <FirstSection/>
+       <FirstSection/>
     </Router>
 
      

@@ -36,9 +36,6 @@
   }
   
   .form--input--wrapper{
-    display: flex;
-    flex-direction: row;
-    column-gap: 5%;
     border: 1px solid #d8d8d8;
     border-radius: 3px;
     padding: 12px;
@@ -46,12 +43,19 @@
   }
 
   .from--input--wrapper,input{
-  padding: 8px;
-  width: 60%;
-  background-color: #fff;
-  border: 0px solid;
-
-  }
+    padding: 8px;
+    width: 70%;
+    background-color: #fff;
+    border: 0px solid;
+  
+    } 
+ .input--btn--wrapper{
+      position: relative;
+      text-align: right;
+      background-color: transparent;
+      border: 0px solid;
+      margin-top: -40px;
+      }
   .input-btn-icon{
     color: var(--primary-blue);
   }

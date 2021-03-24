@@ -1,11 +1,15 @@
-import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
+import { Tabs, Tab, TabPanel, TabList} from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 import './TabsPanel.css'
 import {Button} from '../Button/Button'
+import {IconButton,Icon}from 'rsuite';
+
 import btcIcon from '../../bitcoin_icon.png'
 import piIcon from '../../pi-icon.png'
 import tetherIcon from '../../tether-icon.jpg'
 import ethereumIcon from '../../ethereum-icon-purple.png'
+
+
 const TabsPanel = () => {
     return (
         <Tabs
@@ -21,7 +25,7 @@ const TabsPanel = () => {
             <div className="form--container">
               <p>Cryptocurrency</p>
               <div className="btns--container" >
-              
+                         
                 <Button className="btn" buttonSize="btn--small" buttonStyle="btn--select-token-outline"
                 icon={btcIcon}
                 >
@@ -48,13 +52,19 @@ const TabsPanel = () => {
               <label htmlFor="payment--method">Payment Method  </label><br/>
                 <div className="form--input--wrapper">
                 <input type="text" className="input-payment--method" placeholder="All Payment Methods"/>
-                <Button  buttonSize="btn medium" buttonStyle="input--btn">Show all</Button>
+
+                <div className="input--btn--wrapper">
+                 <Button  buttonSize="btn medium" buttonStyle="input--btn">Show all</Button>
+
+                </div>
                 </div>
 
                 <label htmlFor="payment--amount">You Pay </label><br/>
                 <div className="form--input--wrapper">
                 <input type="text" className="input-payment--amount" placeholder="Any Amount"/>
-                <Button  buttonSize="btn medium" buttonStyle="input--btn">Any Currency &nbsp; <i className="fas fa-chevron-down input-btn-icon"></i></Button>
+                <div className="input--btn--wrapper">
+                <Button className="input-btn" buttonSize="btn medium" buttonStyle="input--btn">Any Currency &nbsp; <i className="fas fa-chevron-down input-btn-icon"></i></Button>
+                </div>
                 </div>
               </form>
             </div>

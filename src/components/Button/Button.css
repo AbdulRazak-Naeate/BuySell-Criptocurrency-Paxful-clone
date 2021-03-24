@@ -48,7 +48,6 @@
     height: 35px;
   }
   .input--btn {
-   text-align: right !important;
     background-color: transparent;
     color: #33333f;
     padding: 8px 20px;
@@ -57,6 +56,7 @@
     transition: all 0.3s ease-out;
     font-size: 0.9rem !important;
     font-weight:600;
+    margin-right: 0 !important;
   }
   .btn-default-icon{
     color: #fff !important;

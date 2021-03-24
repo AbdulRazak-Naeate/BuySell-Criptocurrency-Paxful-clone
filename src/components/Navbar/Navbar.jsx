@@ -1,15 +1,26 @@
-import React from 'react'
-import { Button, IconButton,Icon,ButtonToolbar } from 'rsuite';
-import 'rsuite/dist/styles/rsuite-default.css'
-import { Link } from 'react-router-dom'
+import {React}from 'react'
+import { Button, IconButton,Icon,ButtonToolbar,Alert } from 'rsuite';
+import 'rsuite/dist/styles/rsuite-default.css';
+import 'rsuite/lib/styles/themes/dark/index.less';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../../logo.svg';
 import './custom-theme.less';
 
 
+const ShowAlert = () => {
+   
+          Alert.info('Icon Alert',2000);
 
+ }
 
+const BtnShowAlert = () => {
+   
+    Alert.info('Button Alert',2000);
 
+    
+}
+  
 
 const Navbar = () => {
     return (
@@ -19,13 +30,11 @@ const Navbar = () => {
                     <Link to='/' className="navbar-logo" >
                         BuySell Crypto 
                     </Link>
-
-
                     <ul className="nav-menu">
                         <li className="nav-item">
                        
-                        <ButtonToolbar>
-                       <IconButton color="blue" icon={<Icon icon="chevron-down" color="white"/>} placement="right">
+                    <ButtonToolbar>
+                       <IconButton component={Link} to="/sell"  color="blue" icon={<Icon icon="chevron-down" onClick={ShowAlert}  color="white"/>} placement="right">
                         Buy
                        </IconButton>
                         <IconButton icon={<Icon icon="chevron-down" />} appearance="default" placement="right">
