@@ -2,7 +2,7 @@ import { Tabs, Tab, TabPanel, TabList} from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 import './TabsPanel.css'
 import {Button} from '../Button/Button'
-import {IconButton,Icon}from 'rsuite';
+//import {IconButton,Icon}from 'rsuite';
 
 import btcIcon from '../../bitcoin_icon.png'
 import piIcon from '../../pi-icon.png'
@@ -46,7 +46,7 @@ const TabsPanel = () => {
                   Picoin
                 </Button>
               </div>
-              <p className="token--current-market-price"><i class="fal fa-info-circle"></i> 1 BTC = $57,883.72</p>
+              <p className="token--current-market-price"><i className="fal fa-info-circle"></i> 1 BTC = $57,883.72</p>
 
               <form action="" className="payment-buy-amount-form">
               <label htmlFor="payment--method">Payment Method  </label><br/>

@@ -1,0 +1,17 @@
+:root{
+     --dialog-primary-color: #fff;
+     --dialog-secondary-color:#00000062;
+}
+
+.nts-dialog{
+    width:30vw;
+    height:20vh;
+    background-color: var(--dialog-primary-color);
+    position: absolute;
+    z-index: -1;
+}
+.primary{
+    border: 1px solid var(--dialog-secondary-color);
+    border-radius: 4px;
+    padding: 5px;
+}
