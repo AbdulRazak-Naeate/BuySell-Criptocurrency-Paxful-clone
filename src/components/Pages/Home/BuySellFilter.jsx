@@ -1,4 +1,4 @@
-import TabsPanel from '../TabsPanel/TabsPanel'
+import TabsPanel from '../../TabsPanel/TabsPanel'
 import './BuysellFilter.css';
 const BuySellFilter = () => {
     return (

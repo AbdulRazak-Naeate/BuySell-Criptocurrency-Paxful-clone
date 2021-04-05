@@ -49,7 +49,7 @@ const TabsPanel = () => {
               <p className="token--current-market-price"><i className="fal fa-info-circle"></i> 1 BTC = $57,883.72</p>
 
               <form action="" className="payment-buy-amount-form">
-              <label htmlFor="payment--method">Payment Method  </label><br/>
+              <label className="payment-label" htmlFor="payment--method">Payment Method  </label><br/>
                 <div className="form--input--wrapper">
                 <input type="text" className="input-payment--method" placeholder="All Payment Methods"/>
 
@@ -59,7 +59,7 @@ const TabsPanel = () => {
                 </div>
                 </div>
 
-                <label htmlFor="payment--amount">You Pay </label><br/>
+                <label className="payment-label" htmlFor="payment--amount">You Pay </label><br/>
                 <div className="form--input--wrapper">
                 <input type="text" className="input-payment--amount" placeholder="Any Amount"/>
                 <div className="input--btn--wrapper">
@@ -71,7 +71,51 @@ const TabsPanel = () => {
           </TabPanel>
           <TabPanel tabId="two">
           <div className="form--container">
-               <p>Tab 2 content</p>
+              <p>Cryptocurrency</p>
+              <div className="btns--container" >
+                         
+                <Button className="btn" buttonSize="btn--small" buttonStyle="btn--select-token-outline"
+                icon={btcIcon}
+                >
+                 Bitcoin
+                </Button>
+
+                <Button className="btn" buttonSize="btn--small" buttonStyle="btn--select-token-outline"
+                icon={tetherIcon}>
+                 Tether
+                </Button>
+                <Button className="btn"
+                buttonSize="btn--small"
+                buttonStyle="btn--select-token-outline"
+                icon={ethereumIcon}>Ethereum</Button>
+
+                <Button className="btns" buttonSize="btn--small" buttonStyle="btn--select-token-outline"
+                icon={piIcon}>
+                  Picoin
+                </Button>
+              </div>
+              <p className="token--current-market-price"><i className="fal fa-info-circle"></i> 1 BTC = $57,883.72</p>
+
+              <form action="" className="payment-sell-amount-form">
+              <label className="payment-label" htmlFor="payment--method">Get Paid In </label><br/>
+
+                <div className="form--input--wrapper">
+                <input type="text" className="input-payment--method" placeholder="All Payment Methods"/>
+
+                <div className="input--btn--wrapper">
+                 <Button  buttonSize="btn medium" buttonStyle="input--btn">Show all</Button>
+
+                </div>
+                </div>
+
+                <label className="payment-label"  htmlFor="payment--amount">You Get </label><br/>
+                <div className="form--input--wrapper">
+                <input type="text" className="input-payment--amount" placeholder="Any Amount"/>
+                <div className="input--btn--wrapper">
+                <Button className="input-btn" buttonSize="btn medium" buttonStyle="input--btn">Any Currency &nbsp; <i className="fas fa-chevron-down input-btn-icon"></i></Button>
+                </div>
+                </div>
+              </form>
           </div>
           </TabPanel>
       

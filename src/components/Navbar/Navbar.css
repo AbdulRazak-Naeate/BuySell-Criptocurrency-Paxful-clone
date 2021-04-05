@@ -1,5 +1,10 @@
+:root{
+  --primary-color: #fff;
+  --secondary-color:#d8d8d8;
+}
 .navbar {
    /** background: linear-gradient(90deg, rgb(46, 23, 148) 0%, rgb(26, 23, 23) 100%);*/
+   background: #fff;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -8,7 +13,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    border:1px solid #d8d8d8 ;
+    border:0px solid #d8d8d8 ;
 
   }
   
@@ -18,10 +23,11 @@
     align-items: center;
     height: 60px;
     max-width: 1500px;
-    border: 1px;
+    border: 0px;
 
   }
   
+
   .navbar-logo {
     color: #939393;
     justify-self: start;
@@ -33,6 +39,14 @@
     align-items: center;
     border:0px solid;
   }
+  .user-wrapper{
+    margin: 5px;
+    border:1px solid;
+    width:14%;
+    display: none;
+    flex-direction: row;
+    column-gap: 5px;
+  }
   .username{
     font-size: 1rem;
     border: 0px solid;
@@ -41,6 +55,8 @@
     color: #939393;
 }
 .balance{
+  width: 100%;
+  border: 0px solid;
   font-size: 1rem;
   font-weight: 600;
   color: #54a6f0;
@@ -49,17 +65,54 @@
 }
   .nav--user{
       border: 0px solid;
-      width: 15%;
+      width: 50%;
       height: 46px;
       margin-right: 5px;
   }
   .user--image{
+    margin-top: 8px !important;
     height: 33px;
     width: 33px;
     border: 1px solid;
     border-radius: 90px;
     margin-right: 5px;
 }
+ .arrowdown{
+    margin-top: 12px !important;
+    margin-right: 0px;
+  }
+ .signin-signup{
+   width: 20%;
+  display:flex;
+  flex-direction:row;
+  column-gap:10px;
+  border:0px solid;
+  padding:2px;
+  margin:2px;
+ } 
+ .signin-signup>div{
+   height: 32px;
+  
+ }
+ .btn-signup{
+  color:black;
+  border:1px solid var(--secondary-color);
+  font-weight:600;
+  background:transparent;
+  height: 34px;
+  padding-top: 6px;
+ }
+ .btn-login{
+ font-weight: 600;
+ }
+
+ .btn-get-started{
+  background: transparent;
+  border:1px solid var(--secondary-color);
+  height: 34px;
+  padding-top: 6px;
+  display: none;
+ }
 
   .fa-typo3 {
     margin-left: 0.5rem;
@@ -120,10 +173,7 @@
       
   }
 
-  .arrowdown{
-    margin-right: 4px;
-  }
-
+ 
   .showbuysell-tokens-dialog{
     width: 40vw;
 
@@ -135,26 +185,35 @@
   }
   .token-item{
     margin-top:2px;
-    height:80px;display:flex;
+    height:80px;
+    display:flex;
     flex-direction:row;
-    column-gap:18px
+    column-gap:18px;
+    border:0px solid
   }
-  .dialog-item-image{
+  .token-item:hover{
+    background-color: #d8d8d84b;
+    border: 1px;
+    border-radius: 2px;
+  }
+  .token-item-image{
     height:54px;
     width:54px;
     margin-left:16px;
-    margin-top:16px;
+    margin-top:14px;
     border:0px solid;
     border-radius:90px;
   }
   .item-info{
     border:0px solid;
-    height:100%;
-    padding:10px;
-    width:65%;
+    height:70px;
+    padding:8px;
+    width:60%;
     display:flex;
     flex-direction:column;
-    row-gap:0px
+    row-gap:0px;
+    align-items:flex-start ;
+
   }
 
   .token-buy-title{
@@ -164,16 +223,18 @@
   .token-buy-label{
     font-size:1rem
   }
-  .btn--buysell{
+  .chevron-btn--buysell{
     border:1px solid #dddddd;
     border-radius:3px;
     height:60px;
     width:60px;
-    margin-left:1%;margin-top:18px;
-    padding-left:24px;
-    padding-top:20px
+    margin-left:1%;
+    margin-top:10px;
+    padding-left:7px;
+    padding-top:12px
   }
-  .btn-buysell--icon{
+  
+  .chevron-btn-buysell--icon{
     font-size:1.0rem;
     color:#dddddd
   }

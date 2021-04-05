@@ -1,4 +1,4 @@
-import './FirstSection.css'
+import './Home.css'
 import BuySellFilter from './BuySellFilter';
 
 const Firstsection = () => {

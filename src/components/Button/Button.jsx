@@ -15,7 +15,7 @@ export const Button=({
     const checkButtonStyle= STYLES.includes(buttonStyle)? buttonStyle:STYLES[0];
 
     const checkButtonSize=SIZES.includes(buttonSize)? buttonSize:SIZES[0];
-   const onerrorimgload =(id)=>{
+   const onErrorimgload =(id)=>{
        document.getElementById(id).style.display="none";
    }
     return (
@@ -24,7 +24,7 @@ export const Button=({
             className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick}
             type={type}
             >
-            <img src={icon} alt="" onerror={onerrorimgload} className="btn--icon"/>{children}
+            <img src={icon} alt="" onError={onErrorimgload} className="btn--icon"/>{children}
             </button>
         </Link>
     )

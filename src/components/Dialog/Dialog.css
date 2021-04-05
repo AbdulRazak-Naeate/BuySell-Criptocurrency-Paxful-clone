@@ -1,17 +1,33 @@
 :root{
      --dialog-primary-color: #fff;
-     --dialog-secondary-color:#00000062;
+     --dialog-secondary-color:#d8d8d8;
 }
 
 .nts-dialog{
-    width:30vw;
-    height:20vh;
-    background-color: var(--dialog-primary-color);
+    width:38vw;
+    height:auto;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: 10%;
+    display: none;
+    background-color: var(--dialog-primary-color);
 }
 .primary{
     border: 1px solid var(--dialog-secondary-color);
+    background-color: var(--dialog-primary-color);
     border-radius: 4px;
     padding: 5px;
+}
+.secondary{
+    border: 1px solid var(--dialog-secondary-color);
+    background-color: var(--dialog-secondary-color);
+    border-radius: 4px;
+    padding: 5px;
+}
+.hideDialog{
+    display: none;
+}
+.showDialog{
+    display: block;
 }

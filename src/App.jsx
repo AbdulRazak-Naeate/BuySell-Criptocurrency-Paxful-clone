@@ -1,25 +1,25 @@
 import './App.css';
-import {BrowserRouter as Router } from 'react-router-dom'
-import Navbar from './components/Navbar/Navbar'
-import FirstSection from './components/FirstSection/Firstsection'
-import Dialog from './components/Dialog/Dialog';
+import {BrowserRouter as Router,Switch,Route } from 'react-router-dom'
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Pages/Home/Home';
+import Wallet from './components/Pages/Wallet/Wallet';
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 //import DialogDemo from './components/PrimeReact/PrimeReact';
-function App() {
-  const onMouseLeave=(id)=>{
-    document.getElementById(id).style.display="none";
 
-  }
+function App() {
+  
   return (
     <div className="App">
+    
     <Router>
-    <Navbar/>
-       <FirstSection/>
-       <Dialog  onMouseLeave={onMouseLeave} dialogStyle="primary" >
-       Component
-       </Dialog>
+     <Navbar/>
+     <Switch>
+     <Route path='/' exact component={Home} />
+     <Route path='/wallet' component={Wallet}/>
+    </Switch>
+       
     </Router>
   
      
